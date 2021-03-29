@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Button, Heading, Text, LogoIcon } from "@pancakeswap-libs/uikit";
-import Page from "components/layout/Page";
+// import Page from "components/layout/Page";
 import useI18n from "hooks/useI18n";
 
 const StyledNotFound = styled.div`
@@ -16,16 +16,17 @@ const NotFound = () => {
   const TranslateString = useI18n();
 
   return (
-    <Page>
-      <StyledNotFound>
-        <LogoIcon width="64px" mb="8px" />
-        <Heading size="xxl">404</Heading>
-        <Text mb="16px">{TranslateString(1122, "Oops, page not found.")}</Text>
-        <Button as="a" href="/" scale="sm">
-          {TranslateString(1124, "Back Home")}
-        </Button>
-      </StyledNotFound>
-    </Page>
+    <div>temp</div>
+    // <Page>
+    //   <StyledNotFound>
+    //     <LogoIcon width="64px" mb="8px" />
+    //     <Heading size="xxl">404</Heading>
+    //     <Text mb="16px">{TranslateString(1122, "Oops, page not found.")}</Text>
+    //     <Button as="a" href="/" scale="sm">
+    //       {TranslateString(1124, "Back Home")}
+    //     </Button>
+    //   </StyledNotFound>
+    // </Page>
   );
 };
 
