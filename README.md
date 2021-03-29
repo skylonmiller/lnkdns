@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project utilized the UI repo of binance.
+
+## Install
+
+yarn add @pancakeswap-libs/uikit
+
+## Setup
+
+### Theme
+
+Before using Pancake UIkit, you need to provide the theme file to styled-component.
+
+`import { ThemeProvider } from 'styled-components' import { light, dark } from '@pancakeswap-libs/uikit' ... <ThemeProvider theme={isDark}>...</ThemeProvider>`
+
+### Reset
+
+A reset CSS is available as a global styled component.
+
+`import { ResetCSS } from '@pancakeswap-libs/uikit' ... <ResetCSS />`
+
 ## Available Scripts
 
 In the project directory, you can run:
