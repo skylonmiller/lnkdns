@@ -13,6 +13,12 @@ BigNumber.config({
 });
 
 const App: React.FC = () => {
+  // Monkey patch warn() because of web3 flood
+  // To be removed when web3 1.3.5 is released
+  useEffect(() => {
+    console.warn = () => null;
+  }, []);
+
   return (
     <Router history={history}>
       <ResetCSS />
