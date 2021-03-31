@@ -78,38 +78,19 @@ const CTACards = styled(BaseLayout)`
 `;
 
 const Home: React.FC = () => {
-  const TranslateString = useI18n();
-
   return (
     <>
       <Header />
       <Page>
-        <Hero>
-          {/* <Heading as="h1" size="xl" mb="24px" color="secondary">
-            {TranslateString(576, "PancakeSwap")}
-          </Heading>
-          <Text>
-            {TranslateString(
-              578,
-              "The #1 AMM and yield farm on Binance Smart Chain."
-            )}
-          </Text> */}
-        </Hero>
-        <div>
-          {/* <Cards>
-          <FarmStakingCard />
-          <LotteryCard />
-        </Cards>
-        <CTACards>
-          <EarnAPYCard />
-          <EarnAssetCard />
-          <WinCard />
-        </CTACards>
-        <Cards>
-          <CakeStats />
-          <TotalValueLockedCard />
-        </Cards> */}
-          loser...
+        <div
+          style={{
+            width: "100%",
+            height: "200px",
+            top: "200px",
+            border: "1px solid #000",
+          }}
+        >
+          首页～ 拍卖入口
         </div>
       </Page>
     </>

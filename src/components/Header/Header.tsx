@@ -13,7 +13,15 @@ import UnlockButton from "components/UnlockButton";
 // import StyledButton from "./StyledButton";
 // import { ButtonProps, scales, variants } from "./types";
 
-import { HeaderWrapper, LayoutWrapper, StyledImage } from "./Header.styled";
+import {
+  HeaderWrapper,
+  // Logo,
+  // LayoutWrapper,
+  StyledImage,
+  LnkNav,
+  NavItem,
+  Addition,
+} from "./Header.styled";
 
 const Header = (): JSX.Element => {
   const [requestedApproval, setRequestedApproval] = useState(false);
@@ -67,14 +75,25 @@ const Header = (): JSX.Element => {
         width={163}
         height={140}
       />
-      <LayoutWrapper>
-        <UnlockButton mt="8px" width="200px" height="48px" />
-      </LayoutWrapper>
-      <Flex alignItems="flex-end" justifyContent="right">
-        <Button scale="sm" mr="8px">
-          {TranslateString(452, "Max")}
+      {/* <Logo /> */}
+
+      <LnkNav style={{ marginRight: "400px" }}>
+        <NavItem className="right">委托购买</NavItem>
+        <NavItem className="right">提交出售</NavItem>
+        <NavItem className="right">区块链域名</NavItem>
+        <NavItem className="right">互联网域名</NavItem>
+        <NavItem className="right active">首页</NavItem>
+      </LnkNav>
+      {/* <LayoutWrapper>
+        
+      </LayoutWrapper> */}
+      <Addition>
+        <UnlockButton mt="8px" mr="50px" width="120px" height="38px" />
+
+        <Button scale="sm" mr="58px">
+          {TranslateString(452, "使用教程")}
         </Button>
-      </Flex>
+      </Addition>
     </HeaderWrapper>
   );
 };
